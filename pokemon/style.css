@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+}
+.left-side{
+    background-color: rgb(212, 50, 77);
+    height: 390px;
+    width: 260px;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.big{
+    background-color: rgb(158, 20, 43);
+    width: 100px;
+    height: 43px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.2rem;
+    z-index: 1;
+}
+.circle{
+    background-color: rgb(124, 247, 247);
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+.small{
+    position: absolute;
+    background-color: rgb(158, 20, 43);
+    width: 205px;
+    height: 24px;
+    top: 0;
+    left: 55px;
+    z-index: 2;
+    padding: 0.3rem 0.2rem;
+}
+.three-circles{
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+.ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: yellow;
+}
+.screen-div{
+    position: relative;
+    width: 207px;
+    height: 180px;
+    margin-top: 40px;
+}
+.outer-screen{
+    background-color: rgb(255, 209, 217);
+    width: 207px;
+    height: 180px;
+    border-radius: 6px;
+}
+.inner-screen{
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    left: 19px;
+    width: 170px;
+    height: 150px;
+    border-radius: 25%;
+}
+.controls{
+    margin-top: 30px;
+}
+
+.buttons-top{
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blue{
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.green, .orange{
+    width: 35px;
+    height: 10px;
+    border-radius: 6px;
+}
+.green{
+    background-color: green;
+    margin-right: 5px;
+}
+.orange{
+    background-color: orange;
+}
+.two{
+    display: flex;
+}
+.mouse{
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+.mouse div{
+    width: 45px;
+    height: 13px;
+    background-color: rgb(62, 62, 62);
+    position: absolute;
+}
+.verticle{
+    top: 20px;
+    left: 2px;
+}
+.hortizantle{
+    transform: rotateZ(90deg);
+    top: 20px;
+    left: 2px;
+}
+.buttons-down{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.yellow{
+    background-color: rgb(197, 197, 5);
+    width: 100px;
+    height: 35px;
+}
+
+
+.middle{
+    background-color: rgb(158, 20, 43);
+    width: 12px;
+    height: 350px;
+    margin-top: 30px;
+}
+.right-side{
+    background-color: rgb(212, 50, 77);
+    height: 350px;
+    width: 260px;
+    padding: 1rem;
+    margin-top: 40px;
+    position: relative;
+}
+.hidden{
+    background-color:  rgb(212, 50, 77);
+    width: 140px;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+.search-div{
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+    height: 33px;
+}
+#input{
+    display: flex;
+    flex: 1;
+    background-color: rgb(95, 93, 93);
+    padding: 0.5rem;
+    color: white;
+}
+#input::placeholder{
+    color: whitesmoke;
+
+}
+#input:focus{
+    outline: none;
+}
+.button-search{
+    background: rgb(95, 93, 93);
+    border: none;
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+}
+.button-search i{
+    color: white;
+}
+.grid{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+.aqua-square{
+    background-color: aqua;
+    width: 53px;
+    height: 30px;
+}
+
+.white-orange-div{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.white-sec{
+    display: flex;
+}
+.white-square{
+    background-color: white;
+    width: 50px;
+    height: 49px;
+    margin-left: 6px;
+}
+.orange-oval{
+    background-color: orange;
+    width: 35px;
+    height: 45px;
+    border-radius: 50%;
+}
+.black-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px 5px 0px;
+}
+.black-rec{
+    background-color: rgb(49, 49, 49);
+    width: 90px;
+    height: 30px;
+    
+}
+
+#image{
+    width: 100%;
+    height: 100%;
+}

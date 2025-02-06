@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="app">
+        <div class="header-input">
+            <div class="input-div">
+                <input type="text" placeholder="Enter City" id="input">
+            </div>
+            <div class="button-div">
+                <button onclick="weather()" id="button-search" ><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <!-- date and city -->
+        <div class="date-city">
+            <p id="date"></p>
+            <h2 id="city"></h2>
+        </div>
+
+        <!-- image div -->
+        <div class="image-div"></div>
+
+        <!-- Temperature -->
+         <div class="temp"></div>
+
+        <!-- Extra info -->
+        <div class="extra-info">
+            <div class="col">
+                <div class="data">
+                    <h4 id="high">High</h4>
+                    <p id="high-temp"></p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="data">
+                    <h4 id="low">Low</h4>
+                    <p id="low-temp"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

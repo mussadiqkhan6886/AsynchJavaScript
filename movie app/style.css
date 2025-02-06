@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkslategrey;
+    min-height: 100vh;
+
+}
+.nav-top{
+    background-color: rgb(69, 110, 110);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+.nav-top a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    
+}
+.nav-top input{
+    border: none;
+    background-color: darkcyan;
+    padding: 0.5rem 0.7rem;
+    color: whitesmoke;
+    border-radius: 3px;
+    width: 250px;
+}
+.nav-top input::placeholder{
+    color: white;
+}
+.nav-top input:focus{
+    outline: none;
+}
+.mid{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    cursor: pointer;
+}
+#form{
+    position: relative;
+}
+.fa-search{
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    color: white;
+}
+.column{
+    background-color: rgb(30, 63, 63);
+    width: 230px;
+    min-height: 360px;
+    padding: 1rem;
+    margin: 1.2rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.466);
+    transition: all 0.3s;
+}
+.column:hover{
+    transform: scale(1.05);
+}
+.card{
+    text-align: center;
+}
+.card h3{
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+#img{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    padding: 4.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* screen size */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main{
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .main{
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 700px) {
+    .main{
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1150px) {
+    .main{
+        margin: auto;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1250px) {
+    .main{
+        margin: auto;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .main{
+        margin: auto;
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
